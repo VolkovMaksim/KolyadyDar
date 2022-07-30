@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		3718920B28953DCF0050EC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718920A28953DCF0050EC57 /* AppDelegate.swift */; };
 		3718920D28953DCF0050EC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718920C28953DCF0050EC57 /* SceneDelegate.swift */; };
-		3718920F28953DCF0050EC57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718920E28953DCF0050EC57 /* ViewController.swift */; };
+		3718920F28953DCF0050EC57 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718920E28953DCF0050EC57 /* CurrentViewController.swift */; };
 		3718921228953DCF0050EC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718921028953DCF0050EC57 /* Main.storyboard */; };
 		3718921428953DD30050EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718921328953DD30050EC57 /* Assets.xcassets */; };
 		3718921728953DD30050EC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718921528953DD30050EC57 /* LaunchScreen.storyboard */; };
+		3718922A289547580050EC57 /* rodnik.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37189229289547580050EC57 /* rodnik.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3718920728953DCF0050EC57 /* KolyadyDar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KolyadyDar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3718920A28953DCF0050EC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3718920C28953DCF0050EC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3718920E28953DCF0050EC57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3718920E28953DCF0050EC57 /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		3718921128953DCF0050EC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3718921328953DD30050EC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3718921628953DD30050EC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3718921828953DD30050EC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37189229289547580050EC57 /* rodnik.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rodnik.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,88 @@
 		3718920928953DCF0050EC57 /* KolyadyDar */ = {
 			isa = PBXGroup;
 			children = (
-				3718920A28953DCF0050EC57 /* AppDelegate.swift */,
-				3718920C28953DCF0050EC57 /* SceneDelegate.swift */,
-				3718920E28953DCF0050EC57 /* ViewController.swift */,
-				3718921028953DCF0050EC57 /* Main.storyboard */,
-				3718921328953DD30050EC57 /* Assets.xcassets */,
-				3718921528953DD30050EC57 /* LaunchScreen.storyboard */,
-				3718921828953DD30050EC57 /* Info.plist */,
+				371892222895437A0050EC57 /* App */,
+				37189221289543700050EC57 /* KolyadyDar */,
+				37189220289543620050EC57 /* Supporting files */,
 			);
 			path = KolyadyDar;
+			sourceTree = "<group>";
+		};
+		37189220289543620050EC57 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3718921328953DD30050EC57 /* Assets.xcassets */,
+				3718921828953DD30050EC57 /* Info.plist */,
+				37189229289547580050EC57 /* rodnik.otf */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		37189221289543700050EC57 /* KolyadyDar */ = {
+			isa = PBXGroup;
+			children = (
+				37189228289543C30050EC57 /* Model */,
+				37189227289543BA0050EC57 /* View */,
+				37189226289543B00050EC57 /* Controller */,
+			);
+			path = KolyadyDar;
+			sourceTree = "<group>";
+		};
+		371892222895437A0050EC57 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				37189225289543A60050EC57 /* Model */,
+				37189224289543A00050EC57 /* View */,
+				371892232895438F0050EC57 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		371892232895438F0050EC57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3718920A28953DCF0050EC57 /* AppDelegate.swift */,
+				3718920C28953DCF0050EC57 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37189224289543A00050EC57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3718921528953DD30050EC57 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37189225289543A60050EC57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37189226289543B00050EC57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3718920E28953DCF0050EC57 /* CurrentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37189227289543BA0050EC57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3718921028953DCF0050EC57 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37189228289543C30050EC57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3718922A289547580050EC57 /* rodnik.otf in Resources */,
 				3718921728953DD30050EC57 /* LaunchScreen.storyboard in Resources */,
 				3718921428953DD30050EC57 /* Assets.xcassets in Resources */,
 				3718921228953DCF0050EC57 /* Main.storyboard in Resources */,
@@ -138,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3718920F28953DCF0050EC57 /* ViewController.swift in Sources */,
+				3718920F28953DCF0050EC57 /* CurrentViewController.swift in Sources */,
 				3718920B28953DCF0050EC57 /* AppDelegate.swift in Sources */,
 				3718920D28953DCF0050EC57 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +365,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X8852RDP32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KolyadyDar/Info.plist;
+				INFOPLIST_FILE = "KolyadyDar/Supporting files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Коляды Даръ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +384,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +397,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X8852RDP32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KolyadyDar/Info.plist;
+				INFOPLIST_FILE = "KolyadyDar/Supporting files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Коляды Даръ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +416,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
